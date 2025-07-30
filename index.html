@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alumani David</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+    }
+
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #333;
+      color: white;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Alu-innovate</h1>
+    <p>Inspire. Build. Grow.</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="home">
+      <h2>Home</h2>
+      <p>Empowering Young Minds Through Skills, Creativity & Purpose.</p>
+    </section>
+
+    <section id="about">
+      <h2>About</h2><p>My name is Alumani David a dedicated youth mentor, public speaker, and coding instructor driven by a passion to equip the next generation with practical, future focused skills. As the founder of Alumani Group of Companies, I specialize in empowering young people, especially children, through hands on training in coding, communication, and leadership. From school programs and workshops to creative projects like game development, website creation, graphic design, video editing, and digital literacy, my mission is to nurture confident, purpose driven leaders of tomorrow.</p>
+
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <ul>
+        <li> We prepare kids and youth for a purpose driven future</li>
+        <li> we offer engaging and practical programs designed to equip young people with essential 21st-century skills.
+</li>
+        <li> We inspire creativity and boost confidence</li>
+      </ul>
+    </section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="IMG_0375.JPG" alt="Gallery Image 1">
+    <img src="IMG_0635.jpg" alt="Gallery Image 2">
+    <img src="IMG-20250529-WA0026~2.jpg" alt="Gallery Image 3">
+    <img src="IMG-20250719-WA0014~4 (1).jpg" alt="Gallery Image 4">
+  </div>
+</section>
+
+   <section id="contact" style="padding: 60px 20px; background-color: #f8f9fa; text-align: center;">
+  <h2 style="font-size: 32px; color: #222; margin-bottom: 20px;">Contact Me</h2>
+  <p style="font-size: 18px; color: #555; max-width: 700px; margin: 0 auto 30px;">
+    Have a question, want to book a session, or collaborate? I’d love to hear from you. Reach out through the details below or fill in the contact form.
+  </p>
+
+  <div style="font-size: 18px; color: #444; margin-bottom: 40px;">
+    <p><strong>Email:</strong> alumnidavid0@gmail.com</p>
+    <p><strong>Phone:</strong> +260 976 694 556</p>
+    <p><strong>Location:</strong> Lusaka, Zambia</p>
+  </div>
+
+  <!-- Contact Form -->
+  <form action="mailto:alumnidavid@gmail.com" method="post" enctype="text/plain" style="max-width: 600px; margin: 0 auto;">
+    <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 12px; margin-bottom: 10px;">
+    <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 12px; margin-bottom: 10px;">
+    <textarea name="message" placeholder="Your Message" rows="6" required style="width: 100%; padding: 12px; margin-bottom: 10px;"></textarea>
+    <button type="submit" style="padding: 12px 24px; background-color: #007BFF; color: #fff; border: none; border-radius: 6px;">Send Message</button>
+  </form>
+</section>
+  </main>
+
+  <footer>
+    <p>&copy; Alumani David's Website. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function validateForm() {
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (name === "" || email === "" || message === "") {
+        alert("Please fill in all fields.");
+        return false;
+      }
+
+      document.getElementById('form-msg').textContent = "Thank you for your message!";
+      return false; // Prevent real submission for now
+    }
+  </script>
+
+</body>
+</html>
