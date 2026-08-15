@@ -22,4 +22,4 @@ Or see the live site here: [GitHub Pages link if hosted]()
 ## Author
 
 **Alumani David**  
-Youth mentor, public speaker, and coding instructor.
+Youth mentor, public speaker, C.E.O and coding instructor.
